@@ -5,5 +5,4 @@ branding:
 author: 'StopWar'
 runs:
   using: 'node20'
-  main: 'main.sh'
   post: 'main.sh'
