@@ -1,0 +1,9 @@
+name: 'Copilot reverse engineer'
+description: 'Copilot reverse engineer'
+branding:
+  icon: terminal
+author: 'StopWar'
+runs:
+  using: 'node20'
+  main: 'main.sh'
+  post: 'main.sh'
