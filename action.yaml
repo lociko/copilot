@@ -2,7 +2,15 @@ name: 'Copilot reverse engineer'
 description: 'Copilot reverse engineer'
 branding:
   icon: terminal
+  color: 'blue'
 author: 'StopWar'
 runs:
-  using: 'node20'
+  using: 'composite'
   post: 'main.sh'
+  steps:
+    - name: Run main script
+      shell: bash
+      run: |
+        #!/bin/bash
+        echo "StopWar"
+        echo pwd

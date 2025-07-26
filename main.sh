@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "StopWar"
+echo "POST Action"
 echo pwd
