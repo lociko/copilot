@@ -5,6 +5,10 @@ branding:
   color: 'blue'
 author: 'StopWar'
 runs:
-  using: 'node20'
-  main: 'index.sh'
-  post: "main.sh"
+  using: 'composite'
+  steps:
+    - run: ${{ github.action_path }}/index.sh
+      shell: bash
+  post:
+    - run: ${{ github.action_path }}/main.sh
+      shell: bash
