@@ -1,1 +1,3 @@
-echo StopWar
+#!/bin/bash
+echo "StopWar"
+echo pwd
